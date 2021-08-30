@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Desired Vacations</string>
+    <string name="add_vacation">Add vacation</string>
+    <string name="add_vacation_name">Name</string>
+    <string name="add_vacation_location">Location</string>
+    <string name="add_vacation_hotel">Hotel</string>
+    <string name="add_vacation_money">Needed money</string>
+    <string name="add_vacation_description">Description</string>
+    <string name="see_vacation_details">Details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_image">Choose</string>
+    <string name="content_description_image">New image</string>
+    <string name="update_vacation_btn">Update details</string>
+    <string name="update_name">New name</string>
+    <string name="update_location">New location</string>
+    <string name="update_hotel">New hotel</string>
+    <string name="update_submit">Submit changes</string>
+</resources>

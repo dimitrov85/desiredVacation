@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVacations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etVacationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_vacation_name"
+            android:drawablePadding="@dimen/cardview_compat_inset_shadow"
+            android:hint="@string/add_vacation_name"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etVacationLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_vacation_location"
+            android:drawablePadding="@dimen/cardview_compat_inset_shadow"
+            android:hint="@string/add_vacation_location"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etHotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_vacation_hotel"
+            android:drawablePadding="@dimen/cardview_compat_inset_shadow"
+            android:hint="@string/add_vacation_hotel"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etNeededMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_vacation_money"
+            android:drawablePadding="@dimen/cardview_compat_inset_shadow"
+            android:hint="@string/add_vacation_money"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etVacationDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_baseline_description_24"
+            android:drawablePadding="@dimen/cardview_compat_inset_shadow"
+            android:hint="@string/add_vacation_description"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnAddVacation"
+            android:layout_width="399dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:text="@string/add_vacation"
+            android:drawableStart="@drawable/ic_vacation_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
